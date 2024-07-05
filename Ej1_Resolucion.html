@@ -13,8 +13,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 
     <script>
       function bolaRandom(){
-        var numRandom = Math.random()*100;
-        numRandom = Math.round(numRandom);
+        var numRandom = Math.floor(Math.random() * 100);
+        document.getElementById('ultimaBolilla').innerText = numRandom;
 
         var ultimaBolilla = document.getElementById('ultimaBolilla');
         ultimaBolilla.innerText = numRandom;
